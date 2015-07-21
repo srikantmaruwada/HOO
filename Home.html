@@ -12,18 +12,37 @@
 	<link rel="stylesheet" href="custom.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	<script src="js/menu.js"></script>
 </head> 
 <body> 
 <div id="choisir_restau" data-role="page">
 	
-	<div data-role="header"> 
-		<h1> House of Offers</h1>
-	</div> 
-
+	
+	<div class="wrap">
+    <div class="logoMain" >
+		<a href="#"  title="HOO Logo" > <img src="images/logo.png" alt="Logo">
+        </a>
+		<div class="clear"></div>
+	</div>
+		<nav class="menu">
+			<ul class="active">
+				<li class="current-item"><a href="#">Home</a></li>
+				<li><a href="#">My Work</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Get in Touch</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			<a class="toggle-nav" href="#">&#9776;</a>
+			
+		</nav>
+        <div class="clear"></div>
+	</div><!--end .wrap-->
+	
 	<div data-role="content">
 	
 	<div class="choice_list"> 	
         <ul data-role="listview" data-inset="true" data-filter="true">
+        	<li role="heading">Heading will Come here...</li>
             <li><a href="OfferDetail.html" data-transition="slidedown"> <img src="images/banana-boat.jpg" /> <h2> Banana Ride offers from 1st Aug</h2> <p class="classement four"> 4 stars  </p></a></li>
             <li><a href="OfferDetail1.html" data-transition="slidedown"> <img src="images/Parasailing.jpg" /> <h2> Parasailing Offers</h2> <p class="classement four"> 4 stars  </p> </a></li>            
         </ul>	
